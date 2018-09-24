@@ -16,7 +16,7 @@ $email = "";
 $cpf = "";
 
 //Validando Esencias de Dados
-if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cpf"]) && isset($_POST[""] && isset($_POST["saldo"])))
+if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cpf"]))
 {
 	if (empty($_POST["nome"]))
 		$erro = "Campo Nome Obrigatório";
