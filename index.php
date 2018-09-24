@@ -44,7 +44,7 @@
               <a class="nav-link js-scroll-trigger" href="#page-top">Dívidas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="revict/cadastro.php">Registrar</a>
+              <a class="nav-link js-scroll-trigger" href="http://localhost/revict/cadastro.php">Registrar</a>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@
             <div class="header-content mx-auto">
               <h1 class="mb-5">Bem vindo a nova plataforma de Consulta de Dívidas.
                 <br />Registre-se e cadastre suas dívidas.</h1>
-              <a href="revict/cadastro.php" class="btn btn-outline btn-xl js-scroll-trigger">Vamos Começar?</a>
+              <a href="http://localhost/revict/cadastro.php" class="btn btn-outline btn-xl js-scroll-trigger">Vamos Começar?</a>
             </div>
           </div>
           <div class="col-lg-5 my-auto">

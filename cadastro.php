@@ -149,13 +149,11 @@ span.input-group-addon i {
 		<title>REGISTRO DE USUÁRIOS</title>
 	</head>
 	<body>
+		<form name="signup" method="POST" action="cadastrando.php">
 		<div class="container">
 			<div class="row main">
 				<div class="main-login main-center">
-				<h2><a href="file:///C:/xampp/htdocs/Revict/index.html">LOGO REVICT</a></h2>
-
-					<form name="signup" method="POST" action="cadastrando.php">
-						
+				<h2><a href="http://localhost/revict/index.php">LOGO REVICT</a></h2>						
 						<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Nome</label>
 							<div class="cols-sm-10">
