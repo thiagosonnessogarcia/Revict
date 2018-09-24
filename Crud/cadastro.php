@@ -1,5 +1,5 @@
 <?
-$obj_mysqli = new mysqli("localhost", "root", "tutocrudphp");
+$obj_mysqli = new mysqli("localhost", "root", "revict");
 
 if ($obj_mysqli->connect_errno) 
 {
@@ -14,11 +14,9 @@ $id = -1;
 $nome = "";
 $email = "";
 $cpf = "";
-$valorDivida = "";
-$saldo = "";
 
 //Validando Esencias de Dados
-if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cpf"]) && isset($_POST["valorDivida"] && isset($_POST["saldo"])))
+if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cpf"]) && isset($_POST[""] && isset($_POST["saldo"])))
 {
 	if (empty($_POST["nome"]))
 		$erro = "Campo Nome Obrigatório";
@@ -32,11 +30,9 @@ if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cpf"]) && i
 		$nome = $_POST["nome"];
 		$email = $_POST["email"];
 		$cpf = $_POST["cpf"];
-		$valorDivida = $_POST["valorDivida"];	
-		$saldo = $_POST["saldo"];
 
-		$stmt = $obj_mysqli->prepare("INSERT INTO 'cliente' ('nome', 'email', 'cpf', 'valorDivida', 'saldo') VALUES (?, ?, ?, ?, ?)");
-		$stmt->bind_param('ssss', $nome, $email, $cpf, $valorDivida, $saldo);
+		$stmt = $obj_mysqli->prepare("INSERT INTO 'cliente' ('nome', 'email', 'cpf') VALUES (?, ?, ?)");
+		$stmt->bind_param('ssss', $nome, $email, $cpf);
 
 		if(!$stmt->execute())
 		{
@@ -52,8 +48,8 @@ if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cpf"]) && i
 	else
 	if (is_numeric($id) && $id >= 1) 
 	{
-		$stmt = $obj_mysqli->prepare("UPDATE 'cliente' SET 'nome'=?, 'email'=?, 'cpf'=?, 'valorDivida'=?, 'saldo'=?, WHERE id = ?");
-		$stmt = $bind_param('ssssi', $nome, $email, $cpf, $valorDivida, $saldo, $id);
+		$stmt = $obj_mysqli->prepare("UPDATE 'cliente' SET 'nome'=?, 'email'=?, 'cpf'=?, WHERE id = ?");
+		$stmt = $bind_param('ssssi', $nome, $email, $cpf, $id);
 
 		if(!$stmt->execute())
 		{
@@ -100,8 +96,6 @@ if(isset($_GET["id"]) && is_numeric($_GET["id"]))
 	$nome = $aux_query["Nome"];
 	$email = $aux_query["Email"];
 	$cpf = $aux_query["cpf"];
-	$valorDivida = $aux_query["valorDivida"];
-	$saldo = $aux_query["saldo"];
 
 	$stmt->close();
 }
@@ -125,14 +119,10 @@ if(isset($_GET["id"]) && is_numeric($_GET["id"]))
 		Nome: <br />
 		<input type="text" name="nome" placeholder="Qual seu Nome?"><br /><br />
 		E-mail: <br />
-		<input type="e-mail" name="mail" placeholder="Qual seu E-mail?"><br /><br />
+		<input type="e-mail" name="email" placeholder="Qual seu E-mail?"><br /><br />
 		CPF: <br />
 		<input type="text" name="cpf" placeholder="Qual sua cpf?"><br /><br />
-		valorDivida: <br />
-		<input type="text" name="valorDivida" placeholder="Qual sua valorDivida?"><br /><br />
-		saldo: <br />
-		<input type="text" name="saldo" placeholder="saldo?"><br /><br />
-
+	
 		<input type="hidden" value="<?=$id?>" name="id">
 		<button type="submit"><?=($id==-1)?"Cadastrar":"Salvar"?></button>
 	</form>
@@ -144,8 +134,6 @@ if(isset($_GET["id"]) && is_numeric($_GET["id"]))
 			<td><strong>Nome</strong></td>
 			<td><strong>Email</strong></td>
 			<td><strong>cpf</strong></td>
-			<td><strong>valorDivida</strong></td>
-			<td><strong>saldo</strong></td>
 			<td><strong>#</strong></td>
 		</tr>
 	<?
@@ -157,8 +145,6 @@ if(isset($_GET["id"]) && is_numeric($_GET["id"]))
 		echo ' <td>'.$aux_query["Nome"].'</td>';
 		echo ' <td>'.$aux_query["Email"].'</td>';
 		echo ' <td>'.$aux_query["cpf"].'</td>';
-		echo ' <td>'.$aux_query["valorDivida"].'</td>';
-		echo ' <Td>'.$aux_query["saldo"].'</td>';
 		echo ' <td><a href="'.$_SERVER["PHP_SELF"].'?id='.$aux_query["Id"].'">Editar</a></td>';
 		echo ' <td><a href="'.$_SERVER["PHP_SELF"].'?id='.$aux_query["Id"].&del=true">Excluir</a></td>";
 		echo '</tr>';
