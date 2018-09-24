@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Cadastrando Usuário</title>
-</head>
-<body>
 <?php
 
 $host = "localhost";
@@ -29,7 +23,3 @@ echo "<center><h2>Cadastrado com Sucesso!!!</h2></center>";
 header("Location: login.php");
 
 ?>
-
-</body>
-</body>
-</html>
