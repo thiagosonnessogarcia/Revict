@@ -95,7 +95,7 @@
 </head>
 <body>
 <div class="container">
-    <center><h2> LOGIN - REVICT </h2></center>
+    <center><a href="http://localhost/revict/"><img src="img/logo.jpg" class="img-fluid" alt="logo"></center></a>
         <div id="login-row" class="row justify-content-center align-items-center">
             <div id="login-column" class="col-md-6">
                 <div class="box">
