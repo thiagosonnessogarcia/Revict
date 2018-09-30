@@ -22,7 +22,7 @@
 body, html{
      height: 100%;
  	background-repeat: no-repeat;
- 	background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg);
+ 	background:url(https://dimensaoincendio.com.br/wp-content/uploads/2017/09/background-cinza-1.jpg);
  	font-family: 'Oxygen', sans-serif;
 	    background-size: cover;
 }
@@ -32,14 +32,14 @@ body, html{
 }
 
 h1.title { 
-	font-size: 50px;
+	font-size: 70px;
 	font-family: 'Passion One', cursive; 
 	font-weight: 400; 
 }
 
 hr{
 	width: 10%;
-	color: #fff;
+	color: #ffffff;
 }
 
 .form-group{
@@ -57,7 +57,7 @@ input::-webkit-input-placeholder {
 }
 
 .main-login{
- 	background-color: #fff;
+ 	background-color: black;
     /* shadows and rounded borders */
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -80,7 +80,7 @@ padding: 8px 12px !important;
     border: 1px solid #ccc;
     margin-top: 28px;
     padding: 6px 12px;
-    color: #666;
+    color: #fff;
     text-shadow: 0 1px #fff;
     cursor: pointer;
     -moz-border-radius: 3px 3px;
@@ -89,9 +89,9 @@ padding: 8px 12px !important;
     -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
     -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
     box-shadow: 0 1px #fff inset, 0 1px #ddd;
-    background: #f5f5f5;
+    background: #ffffff;
     background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #eeeeee));
     background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
     background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
     background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
@@ -103,8 +103,8 @@ padding: 8px 12px !important;
  	margin: 0 auto;
  	max-width: 400px;
     padding: 10px 40px;
-	background:#009edf;
-	    color: #FFF;
+	background: grey;
+	    color: #fff;
     text-shadow: none;
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
@@ -112,16 +112,17 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 
 }
 span.input-group-addon i {
-    color: #009edf;
+    color: grey;
     font-size: 17px;
 }
 
 .login-button{
-	margin-top: 5px;
+	margin-top: 15px;
+	background: darkgrey;
 }
 
 .login-register{
-	font-size: 11px;
+	font-size: 15px;
 	text-align: center;
 }
 
@@ -194,7 +195,7 @@ span.input-group-addon i {
 							</div>
 						</div>
 
-						<input type="submit" value="Cadastrar" class="btn btn-primary btn-lg btn-block login-button">
+						<input type="submit" value="CADASTRAR" class="btn btn-black btn-lg btn-block login-button">
 
 					</form>
 				</div>

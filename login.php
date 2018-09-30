@@ -7,7 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
-        .box {
+    
+.box {
     width: 500px;
     margin: 200px 0;
 }
@@ -16,7 +17,7 @@
     position: relative;
     height: 150px;
     width: 150px;
-    background-color: #0074d9;
+    background-color: grey;
     border-radius: 80px;
     float: left;
     margin-right: -50px;
@@ -25,7 +26,7 @@
     position: relative;
     height: 150px;
     width: 150px;
-    background-color: #0074d9;
+    background-color: grey;
     border-radius: 80px;
     margin-top: -30px;
     float: left;
@@ -34,7 +35,7 @@
     position: relative;
     height: 150px;
     width: 150px;
-    background-color: #0074d9;
+    background-color: grey;
     border-radius: 80px;
     margin-top: -30px;
     float: left;
@@ -44,7 +45,7 @@
     position: relative;
     height: 150px;
     width: 150px;
-    background-color: #0074d9;
+    background-color: grey;
     border-radius: 80px;
     margin-top: -25px;
     float: left;
@@ -54,7 +55,7 @@
     position: relative;
     height: 150px;
     width: 150px;
-    background-color: #0074d9;
+    background-color: grey;
     border-radius: 80px;
     float: left;
     margin-right: -48px;
@@ -65,7 +66,7 @@
     position: relative;
     height: 150px;
     width: 150px;
-    background-color: #0074d9;
+    background-color: grey;
     border-radius: 80px;
     float: left;
     margin-right: -20px;
@@ -75,7 +76,7 @@
     position: relative;
     height: 150px;
     width: 150px;
-    background-color: #0074d9;
+    background-color: grey;
     border-radius: 80px;
     float: left;
     margin-right: -20px;
@@ -88,6 +89,10 @@
 
 .form {
     margin-left: 145px;
+}
+
+.login-button {
+    background: grey;
 }
     </style>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -126,9 +131,6 @@
                 </div>
             </div>
         </div>
-    </div>
-<script type="text/javascript">
-
-</script>
+</div>
 </body>
 </html>
